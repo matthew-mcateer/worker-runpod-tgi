@@ -70,7 +70,20 @@ The following inputs can be used for testing the model:
     "input": {
        "prompt": "Who is the president of the United States?",
        "sampling_params": {
-           "max_new_tokens": 100
+           "max_new_tokens": 30
+       }
+    }
+}
+```
+
+For testing latency of the model with larger input and output token sizes, the following input can be used to test the latency for a 572 input w/ 313 tokens output.
+
+```json
+{
+    "input": {
+       "prompt": "Continue a seguinte sequência de palavras: tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, ",
+       "sampling_params": {
+           "max_new_tokens": 313
        }
     }
 }
