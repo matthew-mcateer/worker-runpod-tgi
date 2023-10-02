@@ -2,9 +2,9 @@
 
 <h1>Template | Worker</h1>
 
-[![CI | Test Worker](https://github.com/runpod-workers/worker-template/actions/workflows/CI-test_worker.yml/badge.svg)](https://github.com/runpod-workers/worker-template/actions/workflows/CI-test_worker.yml)
+[![CI | Test Worker](https://github.com/matthew-mcateer/worker-vllm/actions/workflows/CI-test_worker.yml/badge.svg)](https://github.com/matthew-mcateer/worker-vllm/actions/workflows/CI-test_worker.yml)
 &nbsp;
-[![Docker Image](https://github.com/runpod-workers/worker-template/actions/workflows/CD-docker_dev.yml/badge.svg)](https://github.com/runpod-workers/worker-template/actions/workflows/CD-docker_dev.yml)
+[![Docker Image](https://github.com/matthew-mcateer/worker-vllm/actions/workflows/CD-docker_dev.yml/badge.svg)](https://github.com/matthew-mcateer/worker-vllm/actions/workflows/CD-docker_dev.yml)
 
 🚀 | A simple worker that can be used as a starting point to build your own custom RunPod Endpoint API worker.
 </div>
@@ -52,9 +52,9 @@ If using the input validation utility from the runpod python package, create a `
 
 <h1>TGI Endpoint | Serverless Worker</h1> 
 
-[![CI | Test Worker](https://github.com/runpod-workers/worker-template/actions/workflows/CI-test_worker.yml/badge.svg)](https://github.com/runpod-workers/worker-template/actions/workflows/CI-test_worker.yml)
+[![CI | Test Worker](https://github.com/matthew-mcateer/worker-vllm/actions/workflows/CI-test_worker.yml/badge.svg)](https://github.com/matthew-mcateer/worker-vllm/actions/workflows/CI-test_worker.yml)
 &nbsp;
-[![Docker Image](https://github.com/runpod-workers/worker-template/actions/workflows/CD-docker_dev.yml/badge.svg)](https://github.com/runpod-workers/worker-template/actions/workflows/CD-docker_dev.yml)
+[![Docker Image](https://github.com/matthew-mcateer/worker-vllm/actions/workflows/CD-docker_dev.yml/badge.svg)](https://github.com/matthew-mcateer/worker-vllm/actions/workflows/CD-docker_dev.yml)
 
 🚀 | This serverless worker utilizes vLLM (very Large Language Model) behind the scenes and is integrated into RunPod's serverless environment. It supports dynamic auto-scaling using the built-in RunPod autoscaling feature.
 </div>
