@@ -2,9 +2,9 @@
 
 <h1>vLLM Endpoint | RunPod Serverless Worker</h1>
 
-[![CI | Test Worker](https://github.com/matthew-mcateer/worker-vllm/actions/workflows/CI-test_worker.yml/badge.svg)](https://github.com/matthew-mcateer/worker-vllm/actions/workflows/CI-test_worker.yml)
+[![CI | Test Worker](https://github.com/matthew-mcateer/worker-runpod-tgi/actions/workflows/CI-test_worker.yml/badge.svg)](https://github.com/matthew-mcateer/worker-runpod-tgi/actions/workflows/CI-test_worker.yml)
 &nbsp;
-[![Docker Image](https://github.com/matthew-mcateer/worker-vllm/actions/workflows/CD-docker_dev.yml/badge.svg)](https://github.com/matthew-mcateer/worker-vllm/actions/workflows/CD-docker_dev.yml)
+[![Docker Image](https://github.com/matthew-mcateer/worker-runpod-tgi/actions/workflows/CD-docker_dev.yml/badge.svg)](https://github.com/matthew-mcateer/worker-runpod-tgi/actions/workflows/CD-docker_dev.yml)
 
 🚀 | This serverless worker utilizes vLLM (very Large Language Model) behind the scenes and is integrated into RunPod's serverless environment. It supports dynamic auto-scaling using the built-in RunPod autoscaling feature. Based on [runpod-workers/worker-tgi](https://github.com/runpod-workers/worker-tgi).
 </div>
