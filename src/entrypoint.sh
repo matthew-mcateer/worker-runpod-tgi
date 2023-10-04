@@ -42,4 +42,4 @@ fi
 nohup text-generation-launcher --port 8080 &
 
 # Start the handler using python 3.10
-python3.10 -u /handler_hello_world.py
+python3.10 -u /handler_tgi.py
