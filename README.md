@@ -48,6 +48,26 @@ Please make sure to replace your_hugging_face_token_here with your actual Huggin
 Ensure that you have Docker installed and properly set up before running the docker build commands. Once built, you can deploy this serverless worker in your desired environment with confidence that it will automatically scale based on demand. For further inquiries or assistance, feel free to contact our support team.
 
 
+
+Weni/WeniGPT-L-70-4bit (w/ GPTQ-optimized tgi), ``:
+```bash
+sudo docker build . -t matthewmcateer0/worker-runpod-tgi:wenigpt70b4bit-tgi --progress=plain --no-cache --platform linux/amd64 --build-arg HF_MODEL_ID="Weni/WeniGPT-L-70-4bit" --build-arg HF_MODEL_REVISION="main" --build-arg SM_NUM_GPUS="1" --build-arg HF_MODEL_QUANTIZE="gptq"   --build-arg HF_MODEL_TRUST_REMOTE_CODE="true" --build-arg HUGGING_FACE_HUB_TOKEN="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" --build-arg DOWNLOAD_MODEL="1"
+
+sudo docker push matthewmcateer0/worker-runpod-tgi:wenigpt70b4bit-tgi
+```
+
+mistralai/Mistral-7B-v0.1 ``:
+```bash
+sudo docker build . -t matthewmcateer0/worker-runpod-tgi:Mistral7B-tgi --progress=plain --no-cache --platform linux/amd64 --build-arg HF_MODEL_ID="mistralai/Mistral-7B-v0.1" --build-arg HF_MODEL_REVISION="main" --build-arg SM_NUM_GPUS="1" --build-arg HF_MODEL_TRUST_REMOTE_CODE="true" --build-arg HUGGING_FACE_HUB_TOKEN="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" --build-arg DOWNLOAD_MODEL="1"
+
+sudo docker push matthewmcateer0/worker-runpod-tgi:Mistral7B-tgi
+```
+
+
+
+
+
+
 ## Model Inputs
 ```markdown
 | Argument            | Type                 | Default | Description                                                                                          |

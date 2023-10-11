@@ -1,5 +1,6 @@
 # Base image
-FROM nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu20.04
+#FROM nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu20.04
+FROM ghcr.io/huggingface/text-generation-inference:latest
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Set the working directory
@@ -18,6 +19,10 @@ RUN python3 -m pip install --upgrade pip && \
 
 # Add src files (Worker Template)
 ADD src .
+RUN chmod +x ./server.py
+RUN chmod +x ./handler_tgi.py
+RUN chmod +x ./handler_hello_world.py
+RUN chmod +x ./entrypoint.sh
 
 # Whether to download the model into /runpod-volume or not.
 ARG DOWNLOAD_MODEL=
